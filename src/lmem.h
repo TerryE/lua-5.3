@@ -8,7 +8,7 @@
 #define lmem_h
 
 
-#include <stddef.h>
+#include C_HEADER_STDDEF
 
 #include "llimits.h"
 #include "lua.h"

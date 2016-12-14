@@ -10,8 +10,8 @@
 #include "lprefix.h"
 
 
-#include <locale.h>
-#include <string.h>
+#include C_HEADER_LOCALE
+#include C_HEADER_STRING
 
 #include "lua.h"
 

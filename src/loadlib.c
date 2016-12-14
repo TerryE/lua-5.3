@@ -14,9 +14,9 @@
 #include "lprefix.h"
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include C_HEADER_STDIO
+#include C_HEADER_STDLIB
+#include C_HEADER_STRING
 
 #include "lua.h"
 
@@ -134,7 +134,7 @@ static lua_CFunction lsys_sym (lua_State *L, void *lib, const char *sym);
 ** =========================================================================
 */
 
-#include <dlfcn.h>
+#include C_HEADER_DLFCN
 
 /*
 ** Macro to convert pointer-to-void* to pointer-to-function. This cast
@@ -177,7 +177,7 @@ static lua_CFunction lsys_sym (lua_State *L, void *lib, const char *sym) {
 ** =======================================================================
 */
 
-#include <windows.h>
+#include C_HEADER_WINDOWS
 
 #undef setprogdir
 

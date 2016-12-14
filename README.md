@@ -1,4 +1,4 @@
-## Lua 5.4 for NodeMCU architectures ESP8266 and ESP32
+## Lua 5.3 for NodeMCU architectures ESP8266 and ESP32
 
 This repo is based on:
 

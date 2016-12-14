@@ -27,7 +27,7 @@
 #include "lprefix.h"
 
 
-#include <stddef.h>
+#include C_HEADER_STDDEF
 
 #include "lua.h"
 

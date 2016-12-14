@@ -8,7 +8,7 @@
 #define ltests_h
 
 
-#include <stdlib.h>
+#include C_HEADER_STDLIB
 
 /* test Lua with no compatibility code */
 #undef LUA_COMPAT_MATHLIB
@@ -29,7 +29,7 @@
 
 /* turn on assertions */
 #undef NDEBUG
-#include <assert.h>
+#include C_HEADER_ASSERT
 #define lua_assert(c)           assert(c)
 
 

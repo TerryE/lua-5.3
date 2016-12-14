@@ -10,9 +10,9 @@
 #include "lprefix.h"
 
 
-#include <limits.h>
-#include <stddef.h>
-#include <string.h>
+#include C_HEADER_LIMITS
+#include C_HEADER_STDDEF
+#include C_HEADER_STRING
 
 #include "lua.h"
 
@@ -244,7 +244,7 @@ typedef unsigned int IdxT;
 */
 #if !defined(l_randomizePivot)		/* { */
 
-#include <time.h>
+#include C_HEADER_TIME
 
 /* size of 'e' measured in number of 'unsigned int's */
 #define sof(e)		(sizeof(e) / sizeof(unsigned int))

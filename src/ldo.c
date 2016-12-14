@@ -10,9 +10,9 @@
 #include "lprefix.h"
 
 
-#include <setjmp.h>
-#include <stdlib.h>
-#include <string.h>
+#include C_HEADER_SETJMP
+#include C_HEADER_STDLIB
+#include C_HEADER_STRING
 
 #include "lua.h"
 

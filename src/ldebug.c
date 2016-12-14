@@ -10,9 +10,9 @@
 #include "lprefix.h"
 
 
-#include <stdarg.h>
-#include <stddef.h>
-#include <string.h>
+#include C_HEADER_STDARG
+#include C_HEADER_STDDEF
+#include C_HEADER_STRING
 
 #include "lua.h"
 

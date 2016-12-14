@@ -9,10 +9,10 @@
 #include "lprefix.h"
 
 
-#include <signal.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include C_HEADER_SIGNAL
+#include C_HEADER_STDIO
+#include C_HEADER_STDLIB
+#include C_HEADER_STRING
 
 #include "lua.h"
 
@@ -49,12 +49,12 @@
 
 #if defined(LUA_USE_POSIX)	/* { */
 
-#include <unistd.h>
+#include C_HEADER_UNISTD
 #define lua_stdin_is_tty()	isatty(0)
 
 #elif defined(LUA_USE_WINDOWS)	/* }{ */
 
-#include <io.h>
+#include C_HEADER_IO
 #define lua_stdin_is_tty()	_isatty(_fileno(stdin))
 
 #else				/* }{ */
@@ -77,8 +77,8 @@
 
 #if defined(LUA_USE_READLINE)	/* { */
 
-#include <readline/readline.h>
-#include <readline/history.h>
+#include C_HEADER_READLINE_READLINE
+#include C_HEADER_READLINE_HISTORY
 #define lua_readline(L,b,p)	((void)L, ((b)=readline(p)) != NULL)
 #define lua_saveline(L,line)	((void)L, add_history(line))
 #define lua_freeline(L,b)	((void)L, free(b))

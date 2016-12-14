@@ -10,11 +10,11 @@
 #include "lprefix.h"
 
 
-#include <errno.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include C_HEADER_ERRNO
+#include C_HEADER_STDARG
+#include C_HEADER_STDIO
+#include C_HEADER_STDLIB
+#include C_HEADER_STRING
 
 
 /*
@@ -254,7 +254,7 @@ LUALIB_API int luaL_fileresult (lua_State *L, int stat, const char *fname) {
 
 #if defined(LUA_USE_POSIX)
 
-#include <sys/wait.h>
+#include C_HEADER_SYS_WAIT
 
 /*
 ** use appropriate macros to interpret 'pclose' return status

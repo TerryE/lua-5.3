@@ -38,7 +38,7 @@ struct lua_longjmp;  /* defined in ldo.c */
 ** is thread safe
 */
 #if !defined(l_signalT)
-#include <signal.h>
+#include C_HEADER_SIGNAL
 #define l_signalT	sig_atomic_t
 #endif
 

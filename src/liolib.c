@@ -10,12 +10,12 @@
 #include "lprefix.h"
 
 
-#include <ctype.h>
-#include <errno.h>
-#include <locale.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include C_HEADER_CTYPE
+#include C_HEADER_ERRNO
+#include C_HEADER_LOCALE
+#include C_HEADER_STDIO
+#include C_HEADER_STDLIB
+#include C_HEADER_STRING
 
 #include "lua.h"
 
@@ -104,7 +104,7 @@
 
 #if defined(LUA_USE_POSIX)	/* { */
 
-#include <sys/types.h>
+#include C_HEADER_SYS_TYPES
 
 #define l_fseek(f,o,w)		fseeko(f,o,w)
 #define l_ftell(f)		ftello(f)

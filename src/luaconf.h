@@ -8,8 +8,8 @@
 #ifndef luaconf_h
 #define luaconf_h
 
-#include <limits.h>
-#include <stddef.h>
+#include C_HEADER_LIMITS
+#include C_HEADER_STDDEF
 
 
 /*
@@ -640,7 +640,7 @@
 
 #if !defined(LUA_USE_C89) && defined(__STDC_VERSION__) && \
     __STDC_VERSION__ >= 199901L
-#include <stdint.h>
+#include C_HEADER_STDINT
 #if defined(INTPTR_MAX)  /* even in C99 this type is optional */
 #undef LUA_KCONTEXT
 #define LUA_KCONTEXT	intptr_t
@@ -681,7 +681,7 @@
 ** Define it as a help when debugging C code.
 */
 #if defined(LUA_USE_APICHECK)
-#include <assert.h>
+#include C_HEADER_ASSERT
 #define luai_apicheck(l,e)	assert(e)
 #endif
 

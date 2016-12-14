@@ -8,8 +8,8 @@
 #define llimits_h
 
 
-#include <limits.h>
-#include <stddef.h>
+#include C_HEADER_LIMITS
+#include C_HEADER_STDDEF
 
 
 #include "lua.h"

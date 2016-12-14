@@ -9,8 +9,8 @@
 #ifndef lua_h
 #define lua_h
 
-#include <stdarg.h>
-#include <stddef.h>
+#include C_HEADER_STDARG
+#include C_HEADER_STDDEF
 
 
 #include "luaconf.h"
